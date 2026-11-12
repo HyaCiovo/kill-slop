@@ -1,0 +1,23 @@
+name: Improvement / 改进建议
+description: Suggest clearer guidance or a new page-pattern example / 建议改进规则或新增页面模式示例
+title: "[Improvement]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal / 建议
+      description: What should change, and how does it improve page outcomes? / 建议修改什么，能改善什么页面结果？
+    validations:
+      required: true
+  - type: textarea
+    id: defect_example
+    attributes:
+      label: Confirmed defect example / 确认问题示例
+      description: Show a case where the pattern causes a real problem. / 提供该模式确实造成问题的示例。
+  - type: textarea
+    id: protected_example
+    attributes:
+      label: Protected example / 保护示例
+      description: Show where the same pattern is valid and should remain unchanged. / 提供相同模式合理且不应修改的示例。

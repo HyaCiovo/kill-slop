@@ -1,0 +1,26 @@
+name: Bug report / 问题反馈
+description: Report incorrect guidance, broken references, or validation failures / 报告不当规则、失效引用或校验失败
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / 问题
+      description: What happened, and what did you expect? / 实际发生了什么，预期是什么？
+      placeholder: Include the relevant file, passage, or prompt. / 请提供相关文件、片段或提示词。
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Reproduction example / 复现示例
+      description: Provide a minimal example or steps. / 提供最小示例或操作步骤。
+    validations:
+      required: true
+  - type: textarea
+    id: protected
+    attributes:
+      label: Protected content / 受保护内容
+      description: Note any facts, legal language, or technical limits that must not change. / 说明不得修改的事实、法律表述或技术限制。
