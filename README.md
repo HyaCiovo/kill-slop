@@ -32,13 +32,13 @@ Each edition contains a compact `SKILL.md` router plus five contextual reference
 
 ## Installation
 
-Replace `YOUR_GITHUB_USERNAME` with the repository owner after publishing.
+Repository: [github.com/HyaCiovo/de-ai-landing-page](https://github.com/HyaCiovo/de-ai-landing-page).
 
 ### Skills CLI
 
 ```bash
-npx skills add YOUR_GITHUB_USERNAME/de-ai-landing-page --list
-npx skills add YOUR_GITHUB_USERNAME/de-ai-landing-page
+npx skills add HyaCiovo/de-ai-landing-page --list
+npx skills add HyaCiovo/de-ai-landing-page
 ```
 
 Select `de-ai-landing-page` for English or `de-ai-landing-page-zh` for Chinese when prompted.
@@ -48,7 +48,7 @@ Select `de-ai-landing-page` for English or `de-ai-landing-page-zh` for Chinese w
 Clone the repository, then copy the directory for your chosen language into the skills directory supported by your agent:
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/de-ai-landing-page.git
+git clone https://github.com/HyaCiovo/de-ai-landing-page.git
 ```
 
 See your agent's documentation for the correct skills directory. Each skill is self-contained and includes its own `references/` directory.

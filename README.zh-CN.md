@@ -32,13 +32,13 @@
 
 ## 安装
 
-发布后，将 `YOUR_GITHUB_USERNAME` 替换为仓库所有者的 GitHub 用户名。
+仓库地址：[github.com/HyaCiovo/de-ai-landing-page](https://github.com/HyaCiovo/de-ai-landing-page)。
 
 ### Skills CLI
 
 ```bash
-npx skills add YOUR_GITHUB_USERNAME/de-ai-landing-page --list
-npx skills add YOUR_GITHUB_USERNAME/de-ai-landing-page
+npx skills add HyaCiovo/de-ai-landing-page --list
+npx skills add HyaCiovo/de-ai-landing-page
 ```
 
 出现选择提示时，英文选择 `de-ai-landing-page`，中文选择 `de-ai-landing-page-zh`。
@@ -48,7 +48,7 @@ npx skills add YOUR_GITHUB_USERNAME/de-ai-landing-page
 克隆仓库，然后把所需语言的整个目录复制到 Agent 支持的 Skills 目录：
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/de-ai-landing-page.git
+git clone https://github.com/HyaCiovo/de-ai-landing-page.git
 ```
 
 具体 Skills 目录请查阅对应 Agent 的文档。每个语言版本都包含完整的 `references/` 目录，可以独立使用。
