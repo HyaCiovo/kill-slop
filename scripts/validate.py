@@ -4,7 +4,7 @@ import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILLS = ("de-ai-landing-page", "de-ai-landing-page-zh")
+SKILLS = ("kill-slop", "kill-slop-zh")
 REFERENCES = (
     "strategy.md",
     "evidence.md",

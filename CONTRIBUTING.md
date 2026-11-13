@@ -2,7 +2,7 @@
 
 [中文贡献指南](CONTRIBUTING.zh-CN.md)
 
-Thank you for improving De AI Landing Page. Keep changes focused, reviewable, and grounded in real page outcomes.
+Thank you for improving Kill Slop. Keep changes focused, reviewable, and grounded in real page outcomes.
 
 ## Ways to contribute
 

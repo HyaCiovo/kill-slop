@@ -1,4 +1,4 @@
-# De AI Landing Page
+# Kill Slop
 
 [English documentation](README.md)
 
@@ -19,8 +19,8 @@
 
 | 语言 | Skill | 路径 |
 |---|---|---|
-| English | `de-ai-landing-page` | [`skills/de-ai-landing-page`](skills/de-ai-landing-page) |
-| 中文 | `de-ai-landing-page-zh` | [`skills/de-ai-landing-page-zh`](skills/de-ai-landing-page-zh) |
+| English | `kill-slop` | [`skills/kill-slop`](skills/kill-slop) |
+| 中文 | `kill-slop-zh` | [`skills/kill-slop-zh`](skills/kill-slop-zh) |
 
 每个版本都包含精简的 `SKILL.md` 路由和五份按需读取的参考文件：
 
@@ -32,23 +32,23 @@
 
 ## 安装
 
-仓库地址：[github.com/HyaCiovo/de-ai-landing-page](https://github.com/HyaCiovo/de-ai-landing-page)。
+仓库地址：[github.com/HyaCiovo/kill-slop](https://github.com/HyaCiovo/kill-slop)。
 
 ### Skills CLI
 
 ```bash
-npx skills add HyaCiovo/de-ai-landing-page --list
-npx skills add HyaCiovo/de-ai-landing-page
+npx skills add HyaCiovo/kill-slop --list
+npx skills add HyaCiovo/kill-slop
 ```
 
-出现选择提示时，英文选择 `de-ai-landing-page`，中文选择 `de-ai-landing-page-zh`。
+出现选择提示时，英文选择 `kill-slop`，中文选择 `kill-slop-zh`。
 
 ### 手动安装
 
 克隆仓库，然后把所需语言的整个目录复制到 Agent 支持的 Skills 目录：
 
 ```bash
-git clone https://github.com/HyaCiovo/de-ai-landing-page.git
+git clone https://github.com/HyaCiovo/kill-slop.git
 ```
 
 具体 Skills 目录请查阅对应 Agent 的文档。每个语言版本都包含完整的 `references/` 目录，可以独立使用。
@@ -72,8 +72,8 @@ git clone https://github.com/HyaCiovo/de-ai-landing-page.git
 ```text
 .
 ├── skills/
-│   ├── de-ai-landing-page/       # English skill
-│   └── de-ai-landing-page-zh/    # 中文 Skill
+│   ├── kill-slop/       # English skill
+│   └── kill-slop-zh/    # 中文 Skill
 ├── scripts/validate.py           # 无第三方依赖的仓库校验
 ├── .github/workflows/validate.yml
 ├── CONTRIBUTING.md

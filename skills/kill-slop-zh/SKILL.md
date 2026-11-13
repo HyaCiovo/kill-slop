@@ -1,9 +1,9 @@
 ---
-name: de-ai-landing-page-zh
+name: kill-slop-zh
 description: "生成、审查和改造官网与营销落地页，解决模板化文案、证据不足、内容堆叠和无效装饰。适用于页面策略、文案、视觉、响应式、动效及转化评审。"
 ---
 
-# De AI Landing Page
+# Kill Slop
 
 ## 核心目标
 

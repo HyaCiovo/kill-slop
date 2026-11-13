@@ -1,9 +1,9 @@
 ---
-name: de-ai-landing-page
+name: kill-slop
 description: "Create, audit, and improve websites and marketing landing pages by removing formulaic copy, weak evidence, content overload, and decorative filler. Use for page strategy, copywriting, visual design, responsive layouts, motion, and conversion reviews."
 ---
 
-# De AI Landing Page
+# Kill Slop
 
 ## Core goal
 

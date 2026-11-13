@@ -1,4 +1,4 @@
-# De AI Landing Page
+# Kill Slop
 
 [中文文档](README.zh-CN.md)
 
@@ -19,8 +19,8 @@ The English and Chinese editions are separate installable skills with the same r
 
 | Language | Skill | Path |
 |---|---|---|
-| English | `de-ai-landing-page` | [`skills/de-ai-landing-page`](skills/de-ai-landing-page) |
-| 中文 | `de-ai-landing-page-zh` | [`skills/de-ai-landing-page-zh`](skills/de-ai-landing-page-zh) |
+| English | `kill-slop` | [`skills/kill-slop`](skills/kill-slop) |
+| 中文 | `kill-slop-zh` | [`skills/kill-slop-zh`](skills/kill-slop-zh) |
 
 Each edition contains a compact `SKILL.md` router plus five contextual references:
 
@@ -32,23 +32,23 @@ Each edition contains a compact `SKILL.md` router plus five contextual reference
 
 ## Installation
 
-Repository: [github.com/HyaCiovo/de-ai-landing-page](https://github.com/HyaCiovo/de-ai-landing-page).
+Repository: [github.com/HyaCiovo/kill-slop](https://github.com/HyaCiovo/kill-slop).
 
 ### Skills CLI
 
 ```bash
-npx skills add HyaCiovo/de-ai-landing-page --list
-npx skills add HyaCiovo/de-ai-landing-page
+npx skills add HyaCiovo/kill-slop --list
+npx skills add HyaCiovo/kill-slop
 ```
 
-Select `de-ai-landing-page` for English or `de-ai-landing-page-zh` for Chinese when prompted.
+Select `kill-slop` for English or `kill-slop-zh` for Chinese when prompted.
 
 ### Manual
 
 Clone the repository, then copy the directory for your chosen language into the skills directory supported by your agent:
 
 ```bash
-git clone https://github.com/HyaCiovo/de-ai-landing-page.git
+git clone https://github.com/HyaCiovo/kill-slop.git
 ```
 
 See your agent's documentation for the correct skills directory. Each skill is self-contained and includes its own `references/` directory.
@@ -72,8 +72,8 @@ Build a landing page for a research data platform. Start with its audience, prim
 ```text
 .
 ├── skills/
-│   ├── de-ai-landing-page/       # English skill
-│   └── de-ai-landing-page-zh/    # 中文 Skill
+│   ├── kill-slop/       # English skill
+│   └── kill-slop-zh/    # 中文 Skill
 ├── scripts/validate.py           # Dependency-free repository validation
 ├── .github/workflows/validate.yml
 ├── CONTRIBUTING.md

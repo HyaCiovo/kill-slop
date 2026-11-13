@@ -2,7 +2,7 @@
 
 [English contributing guide](CONTRIBUTING.md)
 
-感谢你改进 De AI Landing Page。请保持修改聚焦、容易审查，并以真实页面结果为依据。
+感谢你改进 Kill Slop。请保持修改聚焦、容易审查，并以真实页面结果为依据。
 
 ## 可以贡献什么
 
