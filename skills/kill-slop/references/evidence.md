@@ -14,7 +14,9 @@ Place evidence close to the claim it supports instead of burying it at the end o
 
 Real screenshots build trust. Decorative imagery supports pacing and tone. One cannot replace the other. When evidence is unavailable, narrow the claim or propose an evidence plan rather than inventing proof.
 
-Label examples clearly. Visitors must not mistake a guided demo for a live business integration or real customer data.
+Use one lightweight provenance label such as "Sample data" or "Demo" when needed to prevent confusion with live integrations or real customer data. Do not repeat mock or simulated disclaimers across every section, card, or step, and do not interrupt a clearly demonstrative experience with warning copy.
+
+Product interfaces do not need social proof. Use real operational data, visible system state, logs, and product screenshots where they help users complete a task. When real data is unavailable, label sample data clearly once. Never invent chart values, health metrics, activity, or system status to make a dashboard look complete.
 
 ## 2. Evidence gaps
 
@@ -31,7 +33,7 @@ Do not replace specific numbers with vague adjectives on your own. Preserve user
 ## 3. Media authenticity
 
 - Product screenshots should come from a real version, with relevant dates or environments identified.
-- Demo data must be labeled as an example and never presented as real business outcomes.
+- Demo data needs one clear provenance label where confusion is possible, not repeated disclaimers, and must not be presented as real business outcomes.
 - Testimonials need an identifiable source and permission to use the attribution.
 - Data needs a subject, time period, environment, and test method.
 - Media coverage should link to the original source without misleading excerpts.

@@ -2,13 +2,14 @@
 
 [中文文档](README.zh-CN.md)
 
-A bilingual agent skill for building, auditing, and improving websites and marketing landing pages. It puts audience, context, evidence, conversion, mobile reading, and delivery quality before templates and decorative effects.
+A bilingual agent skill for building, auditing, and improving web interfaces: landing pages, homepages, dashboards, product UI, documentation, forms, components, and prototypes. It puts user tasks, context, evidence, mobile reading, accessibility, and delivery quality before templates and decorative effects.
 
 ## Why this skill
 
-- **Decisions before decoration**: identify the page type and primary conversion action before choosing visuals.
+- **Decisions before decoration**: identify the interface type and primary user task or conversion action before choosing visuals.
 - **Evidence before claims**: use real product views, verifiable cases, third-party validation, and documented data.
-- **Clear tradeoffs**: remove repetition, reorder weak structures, and redesign mismatched sections instead of making timid word edits.
+- **Clear tradeoffs**: remove repetition, reorder weak structures, and redesign mismatched regions instead of making timid word edits.
+- **Code-aware review**: search source for repeated patterns, confirm them in context, and prefer shared token or component fixes.
 - **Mobile-specific design**: layer related features and preserve manual scrolling, touch behavior, and readable typography.
 - **Protected content**: never casually rewrite user-provided legal terms, technical limits, safety boundaries, or contractual commitments.
 - **Real verification**: check actual desktop and mobile interactions, not only code or static screenshots.
@@ -22,12 +23,13 @@ The English and Chinese editions are separate installable skills with the same r
 | English | `kill-slop` | [`skills/kill-slop`](skills/kill-slop) |
 | 中文 | `kill-slop-zh` | [`skills/kill-slop-zh`](skills/kill-slop-zh) |
 
-Each edition contains a compact `SKILL.md` router plus five contextual references:
+Each edition contains a compact `SKILL.md` router plus six contextual references:
 
-- `strategy.md`: audience, conversion, copy, and information architecture.
+- `strategy.md`: audience, user tasks, conversion, copy, and information architecture.
 - `evidence.md`: real proof, third-party validation, and evidence gaps.
 - `visual.md`: tokens, components, effects, media licensing, and performance.
 - `interaction.md`: mobile behavior, accessibility, interaction states, SEO, and delivery.
+- `code-audit.md`: source search, contextual triage, shared fixes, and visual checks.
 - `review.md`: audit output and the agent's self-review checklist.
 
 ## Installation
@@ -56,7 +58,11 @@ See your agent's documentation for the correct skills directory. Each skill is s
 ## Example prompts
 
 ```text
-Audit this landing page. Report only conversion issues, evidence gaps, and mobile reading problems. Do not change files.
+Audit this web project for generic visual patterns and unclear interface copy. Do not change files.
+```
+
+```text
+Review this dashboard's empty, loading, error, and mobile states. Preserve all technical constraints.
 ```
 
 ```text
@@ -72,8 +78,8 @@ Build a landing page for a research data platform. Start with its audience, prim
 ```text
 .
 ├── skills/
-│   ├── kill-slop/       # English skill
-│   └── kill-slop-zh/    # 中文 Skill
+│   ├── kill-slop/                # English skill
+│   └── kill-slop-zh/             # 中文 Skill
 ├── scripts/validate.py           # Dependency-free repository validation
 ├── .github/workflows/validate.yml
 ├── CONTRIBUTING.md
@@ -99,7 +105,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) or [贡献指南](CONTRIBUTING.zh-CN.md)
 
 ## Acknowledgements
 
-The contextual review and fact-preservation ideas were partly informed by [unslop](https://github.com/theclaymethod/unslop). This repository does not include unslop's scanners, benchmarks, or codebase.
+The contextual review and fact-preservation ideas were partly informed by [unslop](https://github.com/theclaymethod/unslop). Source-level triage and remediation guidance were informed by [kill-ai-slop](https://github.com/yetone/kill-ai-slop). This repository does not include their scanners, benchmarks, or codebases.
 
 References to shadcn/ui, Base UI, ReactBits, Motion, GSAP, and Pexels are implementation and licensing guidance, not endorsements.
 

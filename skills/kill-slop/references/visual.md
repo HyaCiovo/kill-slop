@@ -14,7 +14,10 @@ Defaults:
 - Use primary colors with restraint. Gradients, glow, and glass effects need a clear purpose.
 - Do not repeat "large heading, gray subtitle, three cards" across every section.
 - Do not use abstract spheres, fake 3D, default icon discs, or abstract UI mockups to fill space.
+- Do not use emoji in interface copy, status markers, navigation, or decoration.
+- Use semantic SVG icons from the project's icon library or deliberate inline SVG. Do not imitate icons with text characters or add an icon merely to fill space.
 - Keep meaningless decorative symbols out of the copy.
+- Do not add sections, cards, controls, labels, helper text, or decorative assets without a distinct user need.
 
 There is no single approved visual style. Editorial, industrial, playful, or minimal directions can all work when they match the audience, evidence, and brand.
 

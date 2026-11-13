@@ -10,6 +10,7 @@ REFERENCES = (
     "evidence.md",
     "visual.md",
     "interaction.md",
+    "code-audit.md",
     "review.md",
 )
 REQUIRED_FILES = (

@@ -2,13 +2,14 @@
 
 [English documentation](README.md)
 
-一个中英双语的 Agent Skill，用于新建、审查和改造官网与营销落地页。它把受众、场景、证据、转化、移动端阅读和交付质量放在模板与装饰效果之前。
+一个中英双语的 Agent Skill，用于新建、审查和改造 Web 界面，包括落地页、官网、仪表盘、产品界面、文档、表单、组件和原型。它把用户任务、场景、证据、移动端阅读、可访问性和交付质量放在模板与装饰效果之前。
 
 ## 为什么需要这个 Skill
 
-- **决策先于装饰**：先确认页面类型和唯一主转化动作，再选择视觉。
+- **决策先于装饰**：先确认界面类型和主要用户任务或转化动作，再选择视觉。
 - **证据先于承诺**：使用真实产品界面、可验证案例、第三方背书和有口径的数据。
 - **明确取舍**：删除重复、重排不合理结构、重做不匹配的区域，而不是畏手畏脚地逐字修补。
+- **结合源码审查**：搜索重复模式，结合语境确认问题，优先修改共享 token 或组件。
 - **移动端独立设计**：对同类功能分层，同时保留手动滚动、触摸操作和可读字号。
 - **内容保护**：不擅自修改用户提供的法律条款、技术限制、安全边界或合同承诺。
 - **真实验收**：检查桌面和移动端的实际交互，而不只检查代码或静态截图。
@@ -22,12 +23,13 @@
 | English | `kill-slop` | [`skills/kill-slop`](skills/kill-slop) |
 | 中文 | `kill-slop-zh` | [`skills/kill-slop-zh`](skills/kill-slop-zh) |
 
-每个版本都包含精简的 `SKILL.md` 路由和五份按需读取的参考文件：
+每个版本都包含精简的 `SKILL.md` 路由和六份按需读取的参考文件：
 
-- `strategy.md`：受众、转化、文案和信息架构。
+- `strategy.md`：受众、用户任务、转化、文案和信息架构。
 - `evidence.md`：真实证据、第三方背书和证据缺口。
 - `visual.md`：设计 token、组件、动效、素材授权和性能。
 - `interaction.md`：移动端、可访问性、交互状态、SEO 和交付。
+- `code-audit.md`：源码搜索、语境复核、共享修复和视觉检查。
 - `review.md`：审查输出和 agent 自检清单。
 
 ## 安装
@@ -56,7 +58,11 @@ git clone https://github.com/HyaCiovo/kill-slop.git
 ## 使用示例
 
 ```text
-审查这个落地页，只报告转化问题、证据缺口和移动端阅读问题，不修改文件。
+审查这个 Web 项目里的通用视觉模式和不清楚的界面文案，不修改文件。
+```
+
+```text
+检查这个仪表盘的空状态、加载、错误和移动端状态，保留所有技术约束。
 ```
 
 ```text
@@ -72,8 +78,8 @@ git clone https://github.com/HyaCiovo/kill-slop.git
 ```text
 .
 ├── skills/
-│   ├── kill-slop/       # English skill
-│   └── kill-slop-zh/    # 中文 Skill
+│   ├── kill-slop/                # English skill
+│   └── kill-slop-zh/             # 中文 Skill
 ├── scripts/validate.py           # 无第三方依赖的仓库校验
 ├── .github/workflows/validate.yml
 ├── CONTRIBUTING.md
@@ -99,7 +105,7 @@ python3 scripts/validate.py
 
 ## 致谢
 
-部分语境判断和事实保护思路参考了 [unslop](https://github.com/theclaymethod/unslop)。本仓库不包含 unslop 的扫描器、评测或代码。
+部分语境判断和事实保护思路参考了 [unslop](https://github.com/theclaymethod/unslop)，源码复核和修复流程参考了 [kill-ai-slop](https://github.com/yetone/kill-ai-slop)。本仓库不包含它们的扫描器、评测或代码。
 
 对 shadcn/ui、Base UI、ReactBits、Motion、GSAP 和 Pexels 的引用仅用于实现与授权建议，不代表这些项目对本仓库的认可。
 
