@@ -1,0 +1,15 @@
+Kill Slop is released under the MIT License; see LICENSE.
+
+The story video workflow documented in:
+- skills/kill-slop/references/video-review.md
+- skills/kill-slop-zh/references/video-review.md
+
+is adapted from unslop by Damir Sokolovsky (@heydamir):
+https://github.com/heydamir/unslop
+
+That source is licensed under Creative Commons Attribution 4.0 International:
+https://creativecommons.org/licenses/by/4.0/
+
+The adapted workflow retains attribution. Videos produced with this workflow should carry the small credit "unslop by @heydamir" as requested by the source skill.
+
+No renderer source code from that repository is copied into Kill Slop.

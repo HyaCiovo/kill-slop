@@ -19,6 +19,8 @@ Use the project's available search tools to find repeated design and copy signal
 - Missing empty, loading, error, focus, disabled, and mobile states.
 - Heavy dependencies or third-party scripts loaded before the primary interface.
 
+Read [patterns.md](patterns.md) for curated pattern IDs and remediation methods. Record the ID only after confirming the issue in context.
+
 A standalone scanner is optional. Use existing project tooling first, and never install a scanner merely to produce a larger report.
 
 ## 3. Triage in context

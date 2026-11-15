@@ -11,6 +11,8 @@ REFERENCES = (
     "visual.md",
     "interaction.md",
     "code-audit.md",
+    "patterns.md",
+    "video-review.md",
     "review.md",
 )
 REQUIRED_FILES = (
@@ -19,6 +21,7 @@ REQUIRED_FILES = (
     "CONTRIBUTING.md",
     "CONTRIBUTING.zh-CN.md",
     "LICENSE",
+    "NOTICE",
 )
 
 errors: list[str] = []
@@ -86,6 +89,19 @@ if len(outlines) == len(SKILLS):
             continue
         if english[name] != chinese[name]:
             errors.append(f"Heading structure differs between language editions: {name}")
+
+pattern_ids: dict[str, list[str]] = {}
+for skill_name in SKILLS:
+    path = ROOT / "skills" / skill_name / "references" / "patterns.md"
+    if not path.is_file():
+        continue
+    ids = re.findall(r"^\| ([CTUWML]\d{2}) \|", path.read_text(encoding="utf-8"), re.MULTILINE)
+    pattern_ids[skill_name] = ids
+    if len(ids) != 24:
+        fail(path, f"expected 24 pattern IDs, found {len(ids)}")
+
+if pattern_ids.get(SKILLS[0]) != pattern_ids.get(SKILLS[1]):
+    errors.append("Pattern IDs differ between language editions")
 
 markdown_files = [ROOT / name for name in REQUIRED_FILES if name.endswith(".md")]
 for skill_name in SKILLS:

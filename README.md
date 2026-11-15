@@ -13,6 +13,7 @@ A bilingual agent skill for building, auditing, and improving web interfaces: la
 - **Mobile-specific design**: layer related features and preserve manual scrolling, touch behavior, and readable typography.
 - **Protected content**: never casually rewrite user-provided legal terms, technical limits, safety boundaries, or contractual commitments.
 - **Real verification**: check actual desktop and mobile interactions, not only code or static screenshots.
+- **Optional comparison and story videos**: record real before-and-after behavior or a short square design transformation with Playwright and FFmpeg only when a video is useful.
 
 ## Languages
 
@@ -23,13 +24,15 @@ The English and Chinese editions are separate installable skills with the same r
 | English | `kill-slop` | [`skills/kill-slop`](skills/kill-slop) |
 | 中文 | `kill-slop-zh` | [`skills/kill-slop-zh`](skills/kill-slop-zh) |
 
-Each edition contains a compact `SKILL.md` router plus six contextual references:
+Each edition contains a compact `SKILL.md` router plus eight contextual references:
 
 - `strategy.md`: audience, user tasks, conversion, copy, and information architecture.
 - `evidence.md`: real proof, third-party validation, and evidence gaps.
 - `visual.md`: tokens, components, effects, media licensing, and performance.
 - `interaction.md`: mobile behavior, accessibility, interaction states, SEO, and delivery.
 - `code-audit.md`: source search, contextual triage, shared fixes, and visual checks.
+- `patterns.md`: twenty-four common slop patterns and concrete remediation methods.
+- `video-review.md`: optional Playwright recording, FFmpeg comparisons, and short story videos.
 - `review.md`: audit output and the agent's self-review checklist.
 
 ## Installation
@@ -107,8 +110,10 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) or [贡献指南](CONTRIBUTING.zh-CN.md)
 
 The contextual review and fact-preservation ideas were partly informed by [unslop](https://github.com/theclaymethod/unslop). Source-level triage and remediation guidance were informed by [kill-ai-slop](https://github.com/yetone/kill-ai-slop). This repository does not include their scanners, benchmarks, or codebases.
 
+The story video workflow was adapted from Damir Sokolovsky's [unslop](https://github.com/heydamir/unslop), licensed CC BY 4.0. See [NOTICE](NOTICE) for attribution and the video credit requirement.
+
 References to shadcn/ui, Base UI, ReactBits, Motion, GSAP, and Pexels are implementation and licensing guidance, not endorsements.
 
 ## License
 
-Released under the [MIT License](LICENSE).
+Original repository content is released under the [MIT License](LICENSE). The adapted story video workflow retains its CC BY 4.0 attribution; see [NOTICE](NOTICE).

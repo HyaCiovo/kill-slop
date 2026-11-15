@@ -13,6 +13,7 @@
 - **移动端独立设计**：对同类功能分层，同时保留手动滚动、触摸操作和可读字号。
 - **内容保护**：不擅自修改用户提供的法律条款、技术限制、安全边界或合同承诺。
 - **真实验收**：检查桌面和移动端的实际交互，而不只检查代码或静态截图。
+- **可选对比与 Story 视频**：确需视频时，使用 Playwright 和 FFmpeg 制作真实前后对比，或方形、短时长的设计改造故事。
 
 ## 语言版本
 
@@ -23,13 +24,15 @@
 | English | `kill-slop` | [`skills/kill-slop`](skills/kill-slop) |
 | 中文 | `kill-slop-zh` | [`skills/kill-slop-zh`](skills/kill-slop-zh) |
 
-每个版本都包含精简的 `SKILL.md` 路由和六份按需读取的参考文件：
+每个版本都包含精简的 `SKILL.md` 路由和八份按需读取的参考文件：
 
 - `strategy.md`：受众、用户任务、转化、文案和信息架构。
 - `evidence.md`：真实证据、第三方背书和证据缺口。
 - `visual.md`：设计 token、组件、动效、素材授权和性能。
 - `interaction.md`：移动端、可访问性、交互状态、SEO 和交付。
 - `code-audit.md`：源码搜索、语境复核、共享修复和视觉检查。
+- `patterns.md`：二十四类常见 slop 模式和具体修复方法。
+- `video-review.md`：可选 Playwright 录制、FFmpeg 对比和 Story 短视频。
 - `review.md`：审查输出和 agent 自检清单。
 
 ## 安装
@@ -107,8 +110,10 @@ python3 scripts/validate.py
 
 部分语境判断和事实保护思路参考了 [unslop](https://github.com/theclaymethod/unslop)，源码复核和修复流程参考了 [kill-ai-slop](https://github.com/yetone/kill-ai-slop)。本仓库不包含它们的扫描器、评测或代码。
 
+Story video 流程改编自 Damir Sokolovsky 的 [unslop](https://github.com/heydamir/unslop)，原内容采用 CC BY 4.0。署名与视频 credit 要求见 [NOTICE](NOTICE)。
+
 对 shadcn/ui、Base UI、ReactBits、Motion、GSAP 和 Pexels 的引用仅用于实现与授权建议，不代表这些项目对本仓库的认可。
 
 ## 许可证
 
-基于 [MIT 许可证](LICENSE)发布。
+仓库原创内容基于 [MIT 许可证](LICENSE)发布。改编的 Story video 流程保留 CC BY 4.0 署名，详见 [NOTICE](NOTICE)。

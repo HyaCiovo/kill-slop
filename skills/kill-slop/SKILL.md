@@ -44,7 +44,7 @@ Infer the mode from the request. Users do not need to memorize commands.
 |---|---|---|
 | **Audit** | Report findings, evidence or state gaps, priorities, and recommendations without changing files | `strategy.md`, `code-audit.md`, and `review.md`, plus other files relevant to the findings |
 | **Improve** | Change confirmed copy, structure, styling, code, and interaction issues | `strategy.md`, `code-audit.md`, files for the affected scope, then `review.md` |
-| **Build** | Start with audience and user goals, then implement and verify | All reference files in order |
+| **Build** | Start with audience and user goals, then implement and verify | Core references; read `patterns.md` and `video-review.md` only when relevant |
 | **Mobile focus** | Review density, layering, wrapping, touch behavior, and same-screen visibility | `interaction.md`, then `review.md` |
 
 References live in this skill's `references/` directory:
@@ -56,6 +56,8 @@ References live in this skill's `references/` directory:
 | [visual.md](references/visual.md) | Design tokens, components, motion, media, and performance |
 | [interaction.md](references/interaction.md) | Mobile behavior, interaction states, accessibility, SEO, and delivery |
 | [code-audit.md](references/code-audit.md) | Source search, contextual triage, shared fixes, and visual regression checks |
+| [patterns.md](references/patterns.md) | Twenty-four common slop patterns, their IDs, and concrete remediation methods |
+| [video-review.md](references/video-review.md) | Optional Playwright recording, FFmpeg comparison videos, and verification |
 | [review.md](references/review.md) | Output formats and the self-review checklist |
 
 Do not load references unrelated to the current task merely to complete a process.

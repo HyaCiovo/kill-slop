@@ -44,7 +44,7 @@ AI 味不是渐变、圆角、插画或动画本身，而是装饰先于信息�
 |---|---|---|
 | **审查** | 只报告发现、证据或状态缺口、优先级和建议，不修改文件 | `strategy.md`、`code-audit.md`、`review.md`，再按问题读取其他文件 |
 | **改造** | 直接修改确认有问题的文案、结构、样式、代码和交互 | `strategy.md`、`code-audit.md` 及改造范围对应的文件，完成后读取 `review.md` |
-| **新建** | 从受众与用户目标开始，完成界面并验证 | 按顺序读取全部 reference 文件 |
+| **新建** | 从受众与用户目标开始，完成界面并验证 | 核心参考文件；按需读取 `patterns.md` 和 `video-review.md` |
 | **移动端专项** | 检查内容密度、分层、断行、触摸操作和同屏可见性 | `interaction.md`，完成后读取 `review.md` |
 
 引用均位于本 skill 的 `references/` 目录：
@@ -56,6 +56,8 @@ AI 味不是渐变、圆角、插画或动画本身，而是装饰先于信息�
 | [visual.md](references/visual.md) | 视觉 token、组件选型、动效、素材与性能 |
 | [interaction.md](references/interaction.md) | 移动端、交互状态、可访问性、SEO 与交付 |
 | [code-audit.md](references/code-audit.md) | 源码搜索、语境复核、共享修复与视觉回归检查 |
+| [patterns.md](references/patterns.md) | 二十四类常见 slop 模式、对应 ID 和具体修复方法 |
+| [video-review.md](references/video-review.md) | 可选 Playwright 录制、FFmpeg 对比视频与验证 |
 | [review.md](references/review.md) | 输出格式与自检清单 |
 
 不要为了遵守流程而读取与当前任务无关的文件。

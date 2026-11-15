@@ -11,7 +11,7 @@ Report in priority order:
 5. Strengths worth retaining.
 6. Actual verification performed and any unverified scope.
 
-Point to specific regions or files and explain each recommendation. Do not assign a mechanical score or trigger a rewrite based on the number of findings.
+Point to specific regions or files and explain each recommendation. When a confirmed issue matches `patterns.md`, include its pattern ID, location, observed problem, and proposed fix. Do not assign a mechanical score or trigger a rewrite based on the number of findings.
 
 ## 2. Build or improvement output
 
